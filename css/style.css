@@ -1,0 +1,287 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*mine*/
+body{
+	background-color:#E1E1E1;
+	height: 100%;
+}
+
+.wrap{
+	width: 1024px;
+	margin:0px auto;
+	font-family:Roboto;	
+}
+
+.main{
+
+}
+
+.header{
+	background-color:#4A90E2;
+	height: 76px;
+	text-align:center;
+	font-weight:bold;
+}
+
+ul{
+	font-size:24px;
+}
+
+li{
+	float:left;
+	width: 220px;
+}
+li.tasks{
+	margin-left:182px;
+}
+li.completed{
+	margin-right:181px;
+}
+
+a{
+	text-decoration:none;
+	color:#00408B;
+	line-height:71px;
+	display:inline-block;
+}
+
+li a:hover{
+	color:#FFFFFF;
+	border-bottom:4px solid #00408B;
+	height: 72px;
+}
+
+/*content*/
+
+/*add*/
+.add{
+	text-align:center;
+}
+
+#add{
+	width: 620px;
+	height: 65px;
+	margin:24px auto;
+	font-size:24px;
+	text-indent:20px;
+	border-radius:5px;
+	border:solid 2px #C8C8C8;
+	outline:none;
+}
+#add:focus {
+	border:solid 5px #E7F79F ;
+	border-radius:5px;
+}
+input::-webkit-input-placeholder{
+	color:#C8C8C8;
+}
+/*ToDoList*/
+.ToDoList{
+	width: 620px;
+	height: 102px;
+	background-color:#FFF2DC;
+	margin:0px auto;
+	text-align: left;
+	font-size:24px;
+	font-family:Roboto;
+	margin-bottom:8px;
+	border-radius:5px;
+}
+
+.ToDoList1/*,.ToDoList2*/{
+	width: 620px;
+	height: 102px;
+	background-color:#F2F2F2;
+	margin:0px auto;
+	text-align: left;
+	font-size:24px;
+	font-family:Roboto;
+	margin-bottom:8px;
+	border-radius:5px;
+}
+
+.ToDoList2{
+	width: 620px;
+	height: 76px;
+	background-color:#F2F2F2;
+	margin:0px auto;
+	text-align: left;
+	font-size:24px;
+	font-family:Roboto;
+	margin-bottom:8px;
+	border-radius:5px;
+}
+.rest_task{
+	margin-left: 236px;
+	color:#C8C8C8 ;
+	font-size:24px;
+}
+
+input[type=checkbox]  {  
+    display: inline-block;  /*用before after一定要設*/
+    vertical-align: middle;  
+    width: 24px;  
+    height: 24px;  
+    -webkit-appearance: none;
+    background-color: transparent;  
+    border: 0;  
+    outline: 0 !important;  
+    line-height: 20px;  
+    color: #d8d8d8; 
+    margin:24px 16px 54px 32px; 
+    float:left;
+    
+}  
+  
+input[type=checkbox]::after, .ToDoList2 input[type=checkbox]::after {  
+    content: "✔"; 
+    display:inline-block;  
+    width: 24px;  
+    height: 24px;  
+    text-align: center;  
+    line-height: 26px;  
+    font-size: 16px;  
+    color: #fff;  
+    background-color: #fff;  
+    box-sizing:border-box;  
+     border-radius:5px;
+}  
+input[type=checkbox]:checked::after,.ToDoList2 input[type=checkbox]:checked::after{  
+    background-color: #4A90E2;
+}  
+.ToDoList2 input[type=checkbox]{
+	display: inline-block;  /*用before after一定要設*/
+    vertical-align: middle;  
+    width: 24px;  
+    height: 24px;  
+    -webkit-appearance: none;
+    background-color: transparent;  
+    border: 0;  
+    outline: 0 !important;  
+    line-height: 20px;  
+    color: #d8d8d8; 
+    margin:24px 16px 28px 32px; 
+    float:left;
+}
+
+.todo2, .yellowstar, .pen{
+	float:left;
+	margin-top:24px;	
+}  
+.yellowstar{
+	margin-left:188px;
+}
+.pen{
+	margin-left:32px;
+	margin-right:35px;
+}
+
+.calendar, .file, .chatbox, .file1{
+	float:left;
+	margin-top:15px;
+}
+
+.calendar span{
+	font-size:16px;
+	color:#757575;
+	margin-left:8px;
+}
+
+.file, .chatbox{
+	margin-left:16px;
+}
+
+.file1{
+	margin-left: 0;
+}
+
+.ToDoList2 .todo2{
+	text-decoration:line-through;
+	color:#9B9B9B;
+}
+
+p.rest_task{
+	font-style:italic;
+}
+/*.todo--label{
+	margin:5px 0px 0px 0px;
+	display:inline-block;
+}
+
+.todo--radio{
+	display:none;
+}
+
+.todo--checkbox.todo--radioInput,.todo--radio:checked + .todo--checkbox.todo--radioInput:after{
+    border-radius:0;
+}
+
+.todo--radioInput{
+	background-color: #fff;
+    border: 1px solid rgba(0,0,0,0.15);
+    display: inline-block;
+    margin-right: 10px;
+    margin-top: -1px;
+    vertical-align: middle;
+    width: 25px;
+    height: 25px;
+    line-height: 1;
+}
+
+.todo--radio:checked + .todo--radioInput:after {
+    background-color: #4A90E2;
+    border-radius: 100%;
+    content: "✔";
+    line-height: 25px;
+    color: #fff;
+    display: inline-block;
+    height: 25px;
+    width: 25px;
+}*/
